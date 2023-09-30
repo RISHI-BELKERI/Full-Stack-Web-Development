@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Functions</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+        var str = "This is a String";
+        console.log(str);
+        // first occurance of the substring
+        var position = str.indexOf('Z');  //if u give a character which is not present then it will return -1, which is common🙂
+        console.log(position)
+
+        // first occurance of the substring
+        position = str.indexOf('is');
+        console.log(position)
+
+        // Last occurance of the substring
+        position = str.lastIndexOf('is');
+        console.log(position)
+
+        // Substring from a string
+        // var substr = str.slice(1,6);
+        var substr = str.substring(1,6);
+        var substr1 = str.substr(1,6);
+        console.log(substr1)
+
+        // var replaced = str.replace('String', 'rishi')
+        // console.log(str)
+        // console.log(replaced)
+
+        // console.log(str.toUpperCase());
+        // console.log(str.toLowerCase());
+        var newString = str.concat('New String')
+        console.log(newString)
+        var strWithWhitespaces = "   this contains      whitespaces   ";
+        console.log(strWithWhitespaces)
+        console.log(strWithWhitespaces.trim())
+
+        // var char2 = str.charAt(2); 
+        // var char2 = str.charCodeAt(2); // Not very important 
+        // console.log(char2)
+
+        console.log(str[2])  // This is called slicing        
+
+    </script>
+</body>
+</html>

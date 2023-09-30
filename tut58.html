@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Settimeout and ClearTimeout</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is tutorial 58")
+        // setaTimeout --> Allows us to run the function once after the interval of time
+        // clearTimeout --> Allows us to run the function repeatedly after the interval of time
+
+        function greet(name, byeText){
+            console.log("Hello Good Morning " + name + " " + byeText);
+        }
+        timeOut = setTimeout(greet, 5000, "Harry", "Take Care");
+        console.log(timeOut) // for this output is 1 and it is a id for this, if we give clearTimeout(1) then it will delete
+        clearTimeout(timeOut);
+        // greet();
+        // setTimeout(greet, 5000, "Harry", "Take Care");
+        // setTimeout(greet(), 2000); ***** Wrong as it is calling a function inside setTimeout This is wrong, bcoz i used paranthesis in greetings
+
+        // IntervalId = setInterval(greet, 2000, "Rishi", "Good Night");
+        // clearInterval(IntervalId);
+
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime, 1000); // can display time
+
+    </script>
+</body>
+</html>

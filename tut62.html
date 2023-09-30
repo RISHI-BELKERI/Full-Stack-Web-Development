@@ -1,0 +1,30 @@
+<!-- JSON :- JSON stands for JavaScript Object Notation. It is a text-based data interchange format to maintain the structure of the data. JSON is the replacement of the XML data exchange format in JSON. It is easy to struct the data compare to XML. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <div class="container">This is my container</div>
+    <script>
+        let jsonOBJ = {
+            name: "Luffy",
+            channel: "XYZ",
+            friend: "ABC",
+            Anime: "One Piece"
+        }
+        console.log(jsonOBJ);
+        let myJsonStr = JSON.stringify(jsonOBJ); // stringify and parse r two methods which r used to convert
+        console.log(myJsonStr);
+
+        myJsonStr = myJsonStr.replace('Luffy', 'Fuffy');
+        console.log(myJsonStr)
+
+        newJsonObj = JSON.parse(myJsonStr); //JSON.parse = takes a valid JSON string and converts into a object
+        console.log(newJsonObj)
+    </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Queries</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+    }
+
+    @media only screen and (max-width:500px) {
+        body {
+            background-color: darkmagenta;
+        }
+
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+        aside {
+            display: none;
+        }
+
+        span {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (min-width: 500px) and (max-width: 1000px) {
+        body {
+            background-color: darkblue;
+        }
+
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+        aside {
+            display: none;
+        }
+
+        span {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 1000px) and (max-width: 1500px) {
+        body {
+            background-color: darkcyan;
+        }
+
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+    }
+
+    @media (min-width: 1500px) {
+        body {
+            background-color: darkorange;
+        }
+    }
+
+    .border {
+        border: 2px solid black;
+        padding: 10px 23px;
+        /* margin: 3px; */
+        background-color: wheat;
+    }
+
+    nav {
+        grid-area: navbar;
+    }
+
+    section {
+        grid-area: section;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    footer {
+        grid-area: footer;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav class="border">
+            <Span>Home</Span>
+            <Span>About</Span>
+            <Span>Services</Span>
+            <Span>Contact</Span>
+        </nav>
+        <section class="border">
+            <h2>Learn CSS in hindi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ad placeat necessitatibus fugit? Id error
+                saepe autem magnam ad asperiores doloremque ipsum recusandae dolores voluptatem? Sapiente veniam
+                voluptate iste quidem numquam magnam, quam sint quo facilis, autem quod sequi temporibus minus
+                molestias, deserunt distinctio provident ipsa quisquam. Beatae dolorem dignissimos distinctio pariatur
+                doloribus porro earum ipsa, fugit eum repellendus atque numquam officiis commodi suscipit eligendi
+                consectetur ut labore libero vero necessitatibus culpa quibusdam eveniet illo voluptate. Repudiandae
+                dolor illum a saepe velit autem, molestias quia facilis rem fugiat harum! Quo sint corrupti porro
+                reprehenderit ipsa optio quidem quia illo sunt!</p>
+        </section>
+        <aside class="border">
+            <h1>More about us</h1>
+        </aside>
+    </div>
+    <footer class="border">Copyright DaYummy 2023</footer>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inrteraction using alert, confirm and prompt</title>
+</head>
+<body>
+    <div class="container">
+        This is a page
+    </div>
+    <script>
+        // Alert in in-browser Javascript - Doesnot return anything
+        // alert("This is a message");  // It creates a pop-up msg which appears when we visit our website that window also called MODAL(means jabtak o popup band nahi hota o website ko use nahi karsakte)WINDOW 
+        
+        // let name = prompt("What is your name?", "Guest");
+        // let name = prompt("What is your name?"); ***for empty input***
+        // console.log(name);
+
+        let deletePost = confirm("do you really want to delete this post?");
+        
+        // console.log(deletePost);
+        if(deletePost){
+            // Code to delete the Post
+            console.log("Your post has been deleted successfully");
+        }
+        else{
+            // Code to cancel deletion of teh Post
+            console.log("Your post has not been deleted")
+        }
+    </script>
+</body>
+</html>

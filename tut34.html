@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+        margin:23px 12px;
+        padding: 23px 12px;
+        border: 2px solid red;
+        background-color:rgb(230, 130, 0);
+        /* box-shadow: offset-x offset-y color; */
+        /* box-shadow: offset-x offset-y blur-radius color; */
+        /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+        /* box-shadow: -10px -9px green; ---> negative number's for upside shadow*/
+        /* box-shadow: 10px 9px 10px green; */
+        /* box-shadow: -7px -5px 10px 14px green; */
+        box-shadow: -7px -5px 10px 14px rgba(71, 172, 172, 0.3); /* r-red g-green b-blue a-alpha */
+        box-shadow: inset 3px 5px green;
+        box-shadow: 3px 5px green 4px 6px red;
+    }
+    .card h2{
+        text-shadow: -3px -4px 2px white;
+        /* text-shadow: 3px 4px 2px white; */
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>HTML Course</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta consequatur quisquam, quasi ipsam illo
+                nostrum praesentium impedit animi doloribus laboriosam sunt doloremque reiciendis quibusdam minus
+                perspiciatis accusamus provident eos. Eaque enim autem ut officiis!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>CSS Course</h2>
+            <>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde asperiores adipisci consectetur
+                aperiam temporibus praesentium, facilis earum voluptatibus? Reiciendis repellat, amet ducimus eligendi,
+                blanditiis soluta maxime numquam, rerum facilis quo excepturi assumenda voluptatum?
+        </div>
+        <div class="card" id="card-3">
+            <h2>Javascript Course</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sequi iste tempore eos ipsum voluptas
+                incidunt voluptatem, asperiores modi est praesentium sunt ex quasi, laudantium officia dolor ipsam.
+                Asperiores at impedit magnam rerum cum?</p>
+        </div>
+    </div>
+</body>
+</html>

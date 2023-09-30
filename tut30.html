@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            text-align: center;
+            font-size: 72px;
+            background-color: red;
+            color: black;
+            display: none;
+        }
+        @media (max-width:300px){
+            #box-1{
+                display: block;
+                background-color:cornflowerblue;
+                /* background-color:crimson; */
+            }
+        }
+        @media (min-width:300px) and (max-width:500px){
+            #box-2{
+                display: block;
+                background-color: aqua;
+            }
+        }
+        @media (min-width:500px) and (max-width:800px){  /* if there is no space b/w (min) and (and) then the media query don't work */
+        #box-3{
+            display: block;
+            /* background-color: darkmagenta; */
+            background-color:blueviolet;
+        }
+    }
+        @media (min-width:800px){
+            #box-4{
+                display: block;
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">iphone</div>
+    <div class="box" id="box-2">Tablet</div>
+    <div class="box" id="box-3">Computer</div>
+    <div class="box" id="box-4">widescreen computer</div>
+</body>
+</html>

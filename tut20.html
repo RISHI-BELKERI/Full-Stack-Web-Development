@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box Model</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color: black;
+    }
+    .container{
+        background-color: rgb(194, 191, 191);
+        border: 3px solid rgb(64, 6, 119);
+        /* we can set margin/padding top, bottom, left, right like this */
+        /* padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 9px;
+        padding-bottom: 9px; */
+
+        /* margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 9px;
+        margin-bottom: 9px; */
+
+        /* padding/margin = top right bottom left; */
+        /* padding/margin:23px 56px 6px 78px; */
+
+        /* padding: y(top/bottom) x (left/right); */
+        /* margin: y(top/bottom) x (left/right); */
+        padding: 4px 9px;
+        margin: 40px 500px;
+        /* border-top-left-radius: 23px; */
+        border-radius: 23px;
+        width: 533px;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <H3>This is my heading</H3>
+        <p id="first">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit numquam, rem animi culpa accusantium labore optio totam, dolore maxime, neque doloremque earum quidem?</p>
+    </div>
+    <div class="container">
+        <H3>This is my heading</H3>
+        <p id="second">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit numquam, rem animi culpa accusantium labore optio totam, dolore maxime, neque doloremque earum quidem?</p>
+    </div>
+    <div class="container">
+        <H3>This is my heading</H3>
+        <p id="third">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit numquam, rem animi culpa accusantium labore optio totam, dolore maxime, neque doloremque earum quidem?</p>
+    </div>
+</body>
+</html>

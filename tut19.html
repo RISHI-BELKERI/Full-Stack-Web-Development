@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height, width, borders and backgrounds</title>
+    <style>
+        #firstPara{
+            background-color: red;
+            height: 100px;
+            width: 455px;
+            border: 4px solid aqua;
+            /* border-width: 4px;
+            border-color: aqua;
+            border-style: solid; */
+            border-radius: 11px;
+        }
+
+        #secondPara{
+            background-color: rgb(0, 255, 255);
+            height: 100px;
+            width: 455px;
+            border-top: 2px solid red;
+            border-bottom: 2px solid rgb(219, 204, 0);
+            border-right: 2px solid rgb(181, 0, 213);
+            border-left: 2px solid rgb(255, 0, 149);
+            border-top-left-radius: 11px;
+            border-top-right-radius: 11px;
+            border-bottom-left-radius: 11px;
+            border-bottom-right-radius: 11px;
+        }
+
+        #thirdPara{
+            height: 700px;
+            width: 800px;
+            background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 100px;
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 10px;
+            background-repeat: no-repeat; /*<------If image is repeating it will show the image only once */
+            /* background-repeat: repeat-x; <------repeats only in x-axis  */
+            /* background-repeat: repeat-y; <------repeats only in y-axis  */
+            /* background-position: center center; */
+            background-position: bottom right;
+        }
+        body{
+            color: blue;
+        }
+        h3{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h3>This is first heading</h3>
+    <p id="firstPara">This is a first paragraph</p>
+
+    <h3>This is second heading</h3>
+    <p id="secondPara">This is a second paragraph</p>
+
+    <h3>This is third heading</h3>
+    <p id="thirdPara">this is third paragraph</p>
+</body>
+</html>

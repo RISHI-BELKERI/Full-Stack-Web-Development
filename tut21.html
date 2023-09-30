@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            background-color: rgb(255, 200, 200);
+            margin: 33px auto;
+        }
+        .item{
+            border: 3px solid gray;
+            margin: 12px, 3px;
+            padding: 12px, 3px;
+            background: rgb(81, 255, 0);
+        }
+        #fruits{
+            float: left;
+            width: 40%;
+        }
+        #computer{
+            float: right;
+            width: 40%;
+        }
+        #stationary{
+            /* float: left; */
+            clear: both;
+            width: 100%;
+        }
+        p,h1{
+            /* text-align: left;
+            text-align: right;
+            text-align: center; */
+            text-align: justify;
+        }
+        h1{
+            margin: auto;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Store</h1>
+        
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem dolorum ea inventore, ipsa sapiente laboriosam ad iste architecto? Nesciunt quis doloribus omnis sunt cumque nostrum libero, exercitationem ipsum quibusdam debitis pariatur vel saepe adipisci, sit repudiandae, laboriosam accusantium. Aliquid quod, minus eligendi harum dolor consequuntur sunt vel quos aliquam eum deleniti recusandae dignissimos natus? ipsum dolor sit amet consectetur adipisicing elit. Sint ut unde voluptatum quod voluptas iste, fugiat consequuntur itaque minima quam quo assumenda aspernatur perspiciatis.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam neque omnis perferendis quo enim, mollitia magni labore fugiat, sunt minima distinctio adipisci at maxime veniam in. Quae, voluptate. Ipsam corporis esse eius aspernatur est error blanditiis qui rem eos, ad id reprehenderit molestias ipsa laborum pariatur sunt illo sed obcaecati soluta repudiandae! Ut et qui nesciunt. ipsum dolor sit amet consectetur adipisicing elit. Sint ut unde voluptatum quod voluptas iste, fugiat consequuntur itaque minima quam quo assumenda aspernatur perspiciatis.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur facilis eum velit vel molestiae unde enim rem ad! Cupiditate vero culpa asperiores necessitatibus veritatis deserunt, fuga et repellat animi unde harum explicabo molestias atque vitae facere quisquam? Cumque vitae minima ut, omnis vero ipsum perferendis atque aliquam soluta maiores odio dolorum! Pariatur doloremque incidunt corrupti repudiandae. ipsum dolor sit amet consectetur adipisicing elit. Sint ut unde voluptatum quod voluptas iste, fugiat consequuntur itaque minima quam quo assumenda aspernatur perspiciatis.</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur facilis eum velit vel molestiae unde enim rem ad! Cupiditate vero culpa asperiores necessitatibus veritatis deserunt, fuga et repellat animi unde harum explicabo molestias atque vitae facere quisquam? Cumque vitae minima ut, omnis vero ipsum perferendis atque aliquam soluta maiores odio dolorum! Pariatur doloremque incidunt corrupti repudiandae. ipsum dolor sit amet consectetur adipisicing elit. Sint ut unde voluptatum quod voluptas iste, fugiat consequuntur itaque minima quam quo assumenda aspernatur perspiciatis.</p>
+        </div>
+    </div>
+</body>
+</html>
